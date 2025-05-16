@@ -1,5 +1,5 @@
-const Footer = ()=> {
-    return <footer>Footer</footer>
+const Footer = () => {
+    return <footer>Footer con i contatti</footer>
 }
 
 export default Footer;
