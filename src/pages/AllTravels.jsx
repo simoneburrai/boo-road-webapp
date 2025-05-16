@@ -5,7 +5,7 @@ const AllTravels = () => {
     return (
         <div>
             <div>
-                <h2 className="my-5 text-center">naviga tra tutti i nostri viaggi!</h2>
+                <h2 className="my-5 text-center text-light">naviga tra tutti i nostri viaggi!</h2>
                 <SearchBarTravel />
             </div>
             <TravelCard />
