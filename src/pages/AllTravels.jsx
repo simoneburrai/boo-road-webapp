@@ -29,7 +29,8 @@ const AllTravels = () => {
                 </div>
                 <TravelCard travels={filteredTravels} />
             </div>
-            )
+        </div>
+    )
 }
 
-            export default AllTravels;
+export default AllTravels;
