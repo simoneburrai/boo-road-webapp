@@ -1,7 +1,9 @@
 const TravellerCard = () => {
 
     return (
-        <div></div>
+        <div>
+
+        </div>
     )
 }
 
