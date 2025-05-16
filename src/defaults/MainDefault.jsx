@@ -2,13 +2,13 @@ import { Outlet } from "react-router-dom"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const MainDefault = ()=> {
+const MainDefault = () => {
     return <>
-    <Header/>
-    <main>
-        <Outlet/>
-    </main>
-    <Footer/>
+        <Header />
+        <main className="container">
+            <Outlet />
+        </main>
+        <Footer />
     </>
 }
 
