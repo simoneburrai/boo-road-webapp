@@ -15,7 +15,7 @@ const SearchBarTravel = ({ onSearch }) => {
             placeholder="Cerca viaggio"
             value={searchValue}
             onChange={handleChange}
-            className="form-control mx-auto w-50 mb-4"
+            className="form-control w-50 mb-4"
         />
     )
 }
