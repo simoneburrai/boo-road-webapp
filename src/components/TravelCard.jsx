@@ -4,7 +4,7 @@ const TravelCard = ({ travels }) => {
         <>
             {travels.map((travel, index) => (
                 <div className="card d-flex flex-row justify-content-around mb-4" key={index}>
-                    <img className="w-25" src={travel.image} alt="image" />
+                    <img className="img-fluid w-25 rounded " src={travel.image} alt="image" />
                     <div className="w-50">
                         <h3 className="p-2 m-4 text-center">Destinazione: {travel.destination.city}</h3>
                         <div className="d-flex flex-row justify-content-between">
