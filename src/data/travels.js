@@ -12,7 +12,7 @@ const travels = [
     "price": 380.00,
     "discountPrice": null,
     "state": "active",
-    "image": "https://via.placeholder.com/300/E91E63/FFFFFF?Text=Parigi",
+    "image": "https://t4.ftcdn.net/jpg/02/96/15/35/360_F_296153501_B34baBHDkFXbl5RmzxpiOumF4LHGCvAE.jpg",
     "description": "Un viaggio culturale nella Ville Lumière, tra musei e monumenti storici.",
     "flight": {
       "airline": "Air France",
@@ -34,7 +34,7 @@ const travels = [
     "price": 250.00,
     "discountPrice": 220.00,
     "state": "active",
-    "image": "https://via.placeholder.com/300/009688/FFFFFF?Text=Roma",
+    "image": "https://t4.ftcdn.net/jpg/00/67/84/93/360_F_67849317_GdgNMpfjgYaaEHVfe3MwPFciwr4Pn7zu.jpg",
     "description": "Esplora la ricca storia e l'arte di Roma.",
     "flight": {
       "airline": "ITA Airways",
@@ -56,7 +56,7 @@ const travels = [
     "price": 420.00,
     "discountPrice": null,
     "state": "active",
-    "image": "https://via.placeholder.com/300/4CAF50/FFFFFF?Text=Interlaken",
+    "image": "https://www.svizzera.net/wp-content/uploads/sites/6/Interlaken.jpg",
     "description": "Avventure escursionistiche tra le montagne svizzere.",
     "flight": {
       "airline": "Swiss International Air Lines",
@@ -78,7 +78,7 @@ const travels = [
     "price": 780.00,
     "discountPrice": 700.00,
     "state": "active",
-    "image": "https://via.placeholder.com/300/FF9800/FFFFFF?Text=Bali",
+    "image": "https://www.pelago.com/img/destinations/bali/0619-0941_bali.jpg",
     "description": "Una vacanza all'insegna del relax sulle spiagge paradisiache di Bali.",
     "flight": {
       "airline": "Singapore Airlines",
@@ -100,7 +100,7 @@ const travels = [
     "price": 950.00,
     "discountPrice": null,
     "state": "active",
-    "image": "https://via.placeholder.com/300/795548/FFFFFF?Text=Kyoto",
+    "image": "https://www.advantour.com/img/japan/images/kyoto.jpg",
     "description": "Immergiti nella cultura tradizionale di Kyoto, tra templi e giardini zen.",
     "flight": {
       "airline": "Japan Airlines",
@@ -122,7 +122,7 @@ const travels = [
     "price": 1100.00,
     "discountPrice": 1000.00,
     "state": "active",
-    "image": "https://via.placeholder.com/300/9E9E9E/FFFFFF?Text=Patagonia",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Cavalli_Al_Pascolo_Ai_Piedi_Del_Massiccio_Del_Fitz_Roy%2C_Patagonia.jpg",
     "description": "Esplora gli spettacolari paesaggi della Patagonia, tra montagne e ghiacciai.",
     "flight": {
       "airline": "LATAM Airlines",
