@@ -1,9 +1,10 @@
 const TravelCard = ({ travels }) => {
+
     return (
         <>
             {travels.map((travel, index) => (
                 <div className="card d-flex flex-row justify-content-around mb-4" key={index}>
-                    <div className="w-25">{travel.image}</div>
+                    <div className="w-25"></div>
                     <div className="w-50">
                         <h3 className="p-2 m-4 text-center">Destinazione: {travel.destination.city}</h3>
                         <div className="d-flex flex-row justify-content-between">

@@ -1,6 +1,6 @@
 import TravelCard from "../components/TravelCard";
 import SearchBarTravel from "../components/SearchBarTravel";
-import travels from "../data/travels";
+import travels from "../data/travels.js";
 import { useState } from "react";
 
 const AllTravels = () => {
