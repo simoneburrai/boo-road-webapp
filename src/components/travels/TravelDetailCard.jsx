@@ -28,13 +28,14 @@ const TravelDetailCard = ({travel}) => {
             </div>
             <div>
                 <p>{travel.description}</p>
-                <div>
+                {flight && <div>
                     <h5>dettagli volo</h5>
                     <div>Compagnia: {flight.airline}</div>
                     <div>Numero Volo: {flight.flightNumber}</div>
                     <div>Partenza Aereoporto:  {flight.departureAirport}</div>
                     <div>Arrivo Aereoporto: {flight.arrivalAirport}</div>
-                </div>
+                </div>}
+                
             </div>
 
         </div>

@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import OperatorCard from "../components/travels/OperatorCard";
-import TravelDetailCard from "../components/travels/travelDetailCard";
+import TravelDetailCard from "../components/travels/TravelDetailCard";
 import {useTravels} from "../contexts/TravelContext"
 import EmergencyCard from "../components/travels/EmergencyCard";
 import { useEffect } from "react";
