@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
+import { format } from "date-fns";
+import { it } from "date-fns/locale";
 
 const TravelDetailCard = ({travel}) => {
     const flight = travel.flight;
+    const formattedStart = format(new Date(travel.start), "d MMM yyyy", { locale: it });
+    const formattedEnd = format(new Date(travel.end), "d MMM yyyy", { locale: it });
+
     return (
         <div className="card">
             <div className=" d-flex flex-row justify-content-around mb-4">
@@ -9,9 +14,9 @@ const TravelDetailCard = ({travel}) => {
                 <div className="w-50">
                     <h3 className="p-2 m-4 text-center">{travel.destination.city}</h3>
                     <div className="d-flex flex-row justify-content-between">
-                        <h4 className="p-2 mb-3 text-center">{travel.start}</h4>
-                        <h5 className="p-2 mb-3 text-center">{travel.duration}</h5>
-                        <h4 className="p-2 mb-3 text-center">{travel.end}</h4>
+                        <h4 className="p-2 mb-3 text-center">{formattedStart}</h4>
+                        <h5 className="p-2 mb-3 text-center">{travel.duration} giorni</h5>
+                        <h4 className="p-2 mb-3 text-center">{formattedEnd}</h4>
                     </div>
                     <div className="d-flex flex-row justify-content-between ">
                         <h4 className=" mb-4">costo</h4>
