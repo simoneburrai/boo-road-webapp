@@ -6,9 +6,11 @@ import SingleTravel from "./pages/SingleTravel"
 import AllTravellers from "./pages/AllTravellers"
 import SingleTraveller from "./pages/SingleTraveller"
 import Contacts from "./pages/Contacts"
+import {TravelProvider} from "./contexts/TravelContext"
 
 function App() {
   return (
+    <TravelProvider>
     <BrowserRouter>
     <Routes>
       <Route element={<MainDefault/>}>
@@ -21,6 +23,7 @@ function App() {
       </Route>
     </Routes>
     </BrowserRouter>
+    </TravelProvider>
   )
 }
 

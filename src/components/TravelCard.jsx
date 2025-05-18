@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TravelCard = ({ travels }) => {
 
     return (
@@ -14,7 +16,7 @@ const TravelCard = ({ travels }) => {
                         </div>
                         <div className="d-flex flex-row justify-content-between">
                             <h4 className="mb-4">{travel.price}€</h4>
-                            <button className="btn btn-primary mb-4">dettagli</button>
+                            <button className="btn btn-primary mb-4"><Link to={`/travels/${travel.id}`}>dettagli</Link></button>
                         </div>
                     </div>
                 </div>
