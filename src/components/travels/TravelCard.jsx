@@ -6,8 +6,8 @@ const TravelCard = ({ travels }) => {
     return (
         <>
             {travels.map((travel) => {
-                const formattedStart = format(new Date(travel.start), "d MMM yyyy", { locale: it });
-                const formattedEnd = format(new Date(travel.end), "d MMM yyyy", { locale: it });
+                const formattedStart = format(new Date(travel.start), "d MMMM yyyy", { locale: it });
+                const formattedEnd = format(new Date(travel.end), "d MMMM yyyy", { locale: it });
 
                 return (
                     <div className="card d-flex flex-row justify-content-around mb-4" key={travel.id}>

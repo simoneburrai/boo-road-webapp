@@ -4,8 +4,8 @@ import { it } from "date-fns/locale";
 
 const TravelDetailCard = ({travel}) => {
     const flight = travel.flight;
-    const formattedStart = format(new Date(travel.start), "d MMM yyyy", { locale: it });
-    const formattedEnd = format(new Date(travel.end), "d MMM yyyy", { locale: it });
+    const formattedStart = format(new Date(travel.start), "d MMMM yyyy", { locale: it });
+    const formattedEnd = format(new Date(travel.end), "d MMMM yyyy", { locale: it });
 
     return (
         <div className="card">
