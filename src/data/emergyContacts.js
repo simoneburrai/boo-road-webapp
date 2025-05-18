@@ -4,14 +4,16 @@ const emergencyContacts = [
     "contactName": "Marie Dubois",
     "phone": "+33 1 42 68 53 00",
     "email": "support.paris@example.com",
-    "location": "Ambasciata Italiana, Parigi"
+    "location": "Ambasciata Italiana, Parigi",
+    "internationalSupport": null
   },
   {
     "travelId": 2,
     "contactName": "Luca Bianchi",
     "phone": "+39 06 4691 1",
     "email": "support.roma@example.com",
-    "location": "Ambasciata Spagnola, Roma"
+    "location": "Ambasciata Spagnola, Roma",
+    "internationalSupport": null
   },
   {
     "travelId": 3,
@@ -113,14 +115,16 @@ const emergencyContacts = [
     "contactName": "Nikos Papadopoulos",
     "phone": "+30 210 721 1281",
     "email": "support.athens@example.com",
-    "location": "Ambasciata Italiana, Atene"
+    "location": "Ambasciata Italiana, Atene",
+    "internationalSupport": null
   },
   {
     "travelId": 9,
     "contactName": "Giulia Conti",
     "phone": "+39 055 23801",
     "email": "support.tuscany@example.com",
-    "location": "Ufficio del turismo, Firenze"
+    "location": "Ufficio del turismo, Firenze",
+    "internationalSupport": null
   },
   {
     "travelId": 10,
@@ -184,14 +188,16 @@ const emergencyContacts = [
     "contactName": "Yannis Georgiou",
     "phone": "+30 22860 22100",
     "email": "support.santorini@example.com",
-    "location": "Municipio di Fira"
+    "location": "Municipio di Fira",
+    "internationalSupport": null
   },
   {
     "travelId": 14,
     "contactName": "Erik Larsen",
     "phone": "+47 55 55 90 00",
     "email": "support.fjords@example.com",
-    "location": "Visit Bergen Office"
+    "location": "Visit Bergen Office",
+    "internationalSupport": null
   },
   {
     "travelId": 15,
@@ -217,28 +223,32 @@ const emergencyContacts = [
     "contactName": "Antonio López",
     "phone": "+34 954 502 200",
     "email": "support.sevilla@example.com",
-    "location": "Oficina de Turismo, Siviglia"
+    "location": "Oficina de Turismo, Siviglia",
+    "internationalSupport": null
   },
   {
     "travelId": 17,
     "contactName": "Elena Kriti",
     "phone": "+30 2810 300 400",
     "email": "support.crete@example.com",
-    "location": "Ufficio del turismo, Heraklion"
+    "location": "Ufficio del turismo, Heraklion",
+    "internationalSupport": null
   },
   {
     "travelId": 18,
     "contactName": "Marta Rovira",
     "phone": "+34 932 703 111",
     "email": "support.barcelona@example.com",
-    "location": "Ufficio del turismo, Plaça Catalunya"
+    "location": "Ufficio del turismo, Plaça Catalunya",
+    "internationalSupport": null
   },
   {
     "travelId": 19,
     "contactName": "Giovanni Esposito",
     "phone": "+39 089 871107",
     "email": "support.amalfi@example.com",
-    "location": "Ufficio del turismo, Amalfi"
+    "location": "Ufficio del turismo, Amalfi",
+    "internationalSupport": null
   },
   {
     "travelId": 20,
