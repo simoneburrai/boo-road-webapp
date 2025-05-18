@@ -1,18 +1,17 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import OperatorCard from "../components/travels/OperatorCard";
 import TravelDetailCard from "../components/travels/travelDetailCard";
 import {useTravels} from "../contexts/TravelContext"
 import EmergencyCard from "../components/travels/EmergencyCard";
-import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const SingleTravel = () => {
-    let {id} = useParams();
-    id = parseInt(id);
     const navigate = useNavigate();
+    let {travelId} = useParams();
+    travelId = parseInt(travelId);
     const {travels, operators} = useTravels()
-    const currentTravel = travels.find(travel => travel.id === id);
-    const currentOperators = operators.filter(operator => operator.travelId === id);
+    const currentTravel = travels.find(travel => travel.id === travelId);
+    const currentOperators = operators.filter(operator => operator.travelId === travelId);
 
     useEffect(()=> {
         if(!currentTravel || currentOperators.length === 0){
@@ -29,7 +28,7 @@ const SingleTravel = () => {
                 return  <OperatorCard operator={operator} key={operator.id}/>
             })}
             </div>
-            <EmergencyCard travelId={id}/>
+            <EmergencyCard travelId={travelId}/>
         </>}
         </div>
     )

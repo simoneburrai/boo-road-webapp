@@ -17,9 +17,9 @@ function App() {
       <Route element={<MainDefault/>}>
         <Route path="/" element={<Home/>}/>
         <Route path="/travels" element={<AllTravels/>}/>
-        <Route path="/travels/:id" element={<SingleTravel/>}></Route>
-        <Route path="/travels/:id/travellers" element={<AllTravellers/>}></Route>
-        <Route path="/travels/:id/travellers/:id" element={<SingleTraveller/>}></Route>
+        <Route path="/travels/:travelId" element={<SingleTravel/>}></Route>
+        <Route path="/travels/:travelId/travellers" element={<AllTravellers/>}></Route>
+        <Route path="/travels/:travelId/travellers/:id" element={<SingleTraveller/>}></Route>
         <Route path="/contacts" element={<Contacts/>}/>
       </Route>
       <Route path="*" element={<NotFound />} />

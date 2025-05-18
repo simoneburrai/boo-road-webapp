@@ -1,18 +1,28 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {useTravels} from "../contexts/TravelContext"
 import TravellerCard from "../components/travellers/TravellerCard"
+import { useEffect } from "react";
 
 const AllTravellers = ()=> {
-    let {id} = useParams();
-    id = parseInt(id);
+    const navigate = useNavigate();
+    let {travelId} = useParams();
+    travelId = parseInt(travelId);
     const {travellers} = useTravels()
-    const currentTravellers = travellers.filter(traveller => traveller.travelId === id)
+    const currentTravellers = travellers.filter(traveller => traveller.travelId === travelId)
+    
+    useEffect(()=> {
+        if(currentTravellers.length === 0){
+            navigate("/notfound");
+        }
+    }, [currentTravellers, navigate])
 
-    return <div>
-        {currentTravellers.map(traveller =>{
+    if(currentTravellers){
+        return <div>
+         {currentTravellers.map(traveller =>{
             return <TravellerCard traveller={traveller} key={traveller.id}/>
         })}
     </div>
+    }
 }
 
 export default AllTravellers;
