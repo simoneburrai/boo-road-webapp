@@ -15,7 +15,9 @@ const TravelDetailCard = ({travel}) => {
                     </div>
                     <div className="d-flex flex-row justify-content-between ">
                         <h4 className=" mb-4">costo</h4>
-                        <button className="btn btn-primary mb-4"><Link to={`/travels/${travel.id}/travellers`}>Vedi tutti i viaggiatori</Link></button>
+                        <Link to={`/travels/${travel.id}/travellers`}
+                        className="btn btn-primary mb-4"
+                        >Vedi tutti i viaggiatori</Link>
                     </div>
                 </div>
             </div>
