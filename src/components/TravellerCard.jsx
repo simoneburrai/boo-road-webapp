@@ -2,7 +2,7 @@ const TravellerCard = () => {
 
     return (
         <div>
-
+            viaggiatore
         </div>
     )
 }
