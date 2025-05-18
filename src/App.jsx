@@ -7,6 +7,7 @@ import AllTravellers from "./pages/AllTravellers"
 import SingleTraveller from "./pages/SingleTraveller"
 import Contacts from "./pages/Contacts"
 import {TravelProvider} from "./contexts/TravelContext"
+import NotFound from "./pages/NotFound"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/travels/:id/travellers/:id" element={<SingleTraveller/>}></Route>
         <Route path="/contacts" element={<Contacts/>}/>
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
     </BrowserRouter>
     </TravelProvider>
