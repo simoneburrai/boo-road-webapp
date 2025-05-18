@@ -10,7 +10,7 @@ const AllTravellers = ()=> {
 
     return <div>
         {currentTravellers.map(traveller =>{
-            return <TravellerCard traveller={traveller}/>
+            return <TravellerCard traveller={traveller} key={traveller.id}/>
         })}
     </div>
 }
