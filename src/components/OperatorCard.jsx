@@ -1,13 +1,13 @@
-const OperatorCard = () => {
-
+const OperatorCard = ({operator}) => {
+const {name, surname, email, number} = operator;
     return (
 
         <div className="card ">
             <div className="w-50">
-                <div className="">Nome: </div>
-                <div>Cognome: </div>
-                <div>Numero di telefono: </div>
-                <div>Email: </div>
+                <div className="">Nome: {name}</div>
+                <div>Cognome: {surname}</div>
+                <div>Numero di telefono: {number} </div>
+                <div>Email: {email}</div>
             </div>
         </div>
     )

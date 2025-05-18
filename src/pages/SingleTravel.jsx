@@ -6,14 +6,16 @@ import {useTravels} from "../contexts/TravelContext"
 const SingleTravel = () => {
     let {id} = useParams();
     id = parseInt(id);
-    const {travels} = useTravels()
+    const {travels, operators} = useTravels()
     const currentTravel = travels.find(travel => travel.id === id);
-    
-    console.log(currentTravel);
+    const currentOperators = operators.filter(operator => operator.travelId === id);
     return (
         <div>
-            <TravelDetailCard />
-            <OperatorCard />
+            <TravelDetailCard travel={currentTravel}/>
+            {currentOperators.map(operator =>{
+                return  <OperatorCard operator={operator}/>
+            })}
+           
         </div>
     )
 }
