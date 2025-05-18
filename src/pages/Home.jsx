@@ -2,9 +2,8 @@ import TravelCard from "../components/TravelCard";
 import travels from "../data/travels";
 import filteredSortedTravels from "../utils/filteredDateTravels";
 
-const months = 2;
-const filteredTravelsforDate = filteredSortedTravels(travels, months)
-console.log(filteredTravelsforDate);
+const nextMonths = 2;
+const filteredTravelsforDate = filteredSortedTravels(travels, nextMonths)
 
 const Home = () => {
     return (
