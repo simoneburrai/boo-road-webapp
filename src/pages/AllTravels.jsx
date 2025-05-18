@@ -1,9 +1,10 @@
 import TravelCard from "../components/TravelCard";
 import SearchBarTravel from "../components/SearchBarTravel";
-import travels from "../data/travels.js";
+import {useTravels} from "../contexts/TravelContext"
 import { useState } from "react";
 
 const AllTravels = () => {
+    const {travels} = useTravels()
     const [filteredTravels, setFilteredTravels] = useState(travels);
     const [searchCity, setSearchCity] = useState("");
 
