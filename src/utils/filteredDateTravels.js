@@ -9,7 +9,10 @@ const filteredSortedTravels = (travels, monthsFilter)=>{
     startDate: parseISO(travel.start) // parsing ISO date
   }))
   .filter(travel => differenceInMonths(travel.startDate, new Date()) <= monthsFilter)
-  .sort((a, b) => compareAsc(a.startDate, b.startDate));
+  .sort((a, b) => compareAsc(a.startDate, b.startDate))
+  .map(({ startDate, ...rest }) => rest);
 }
+
+
 
 export default filteredSortedTravels;
