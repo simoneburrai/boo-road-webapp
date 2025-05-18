@@ -1,4 +1,4 @@
-import TravelCard from "../components/TravelCard";
+import TravelCard from "../components/travels/TravelCard";
 import filteredSortedTravels from "../utils/filteredDateTravels";
 import {useTravels} from "../contexts/TravelContext"
 

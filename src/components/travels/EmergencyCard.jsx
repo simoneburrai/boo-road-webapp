@@ -1,4 +1,4 @@
-import {useTravels} from "../contexts/TravelContext"
+import {useTravels} from "../../contexts/TravelContext"
 
 const EmergencyCard = ({travelId})=> {
     const {emergencyContacts} = useTravels();

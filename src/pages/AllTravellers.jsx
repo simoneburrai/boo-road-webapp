@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import {useTravels} from "../contexts/TravelContext"
-import TravellerCard from "../components/TravellerCard"
+import TravellerCard from "../components/travellers/TravellerCard"
 
 const AllTravellers = ()=> {
     let {id} = useParams();

@@ -1,4 +1,4 @@
-import TravelCard from "../components/TravelCard";
+import TravelCard from "../components/travels/TravelCard";
 import SearchBarTravel from "../components/SearchBarTravel";
 import {useTravels} from "../contexts/TravelContext"
 import { useState } from "react";
