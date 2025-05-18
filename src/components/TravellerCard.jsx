@@ -1,4 +1,4 @@
-const TravellerCard = () => {
+const TravellerCard = ({traveller}) => {
 
     return (
         <div>

@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import OperatorCard from "../components/OperatorCard";
 import TravelDetailCard from "../components/travelDetailCard";
 import {useTravels} from "../contexts/TravelContext"
+import EmergencyCard from "../components/EmergencyCard";
 
 const SingleTravel = () => {
     let {id} = useParams();
@@ -12,10 +13,12 @@ const SingleTravel = () => {
     return (
         <div>
             <TravelDetailCard travel={currentTravel}/>
-            {currentOperators.map(operator =>{
-                return  <OperatorCard operator={operator}/>
+            <div>
+                {currentOperators.map(operator =>{
+                return  <OperatorCard operator={operator} key={operator.id}/>
             })}
-           
+            </div>
+            <EmergencyCard travelId={id}/>
         </div>
     )
 }
