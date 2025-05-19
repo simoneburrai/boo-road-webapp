@@ -53,47 +53,47 @@ function NewTraveller() {
     return (
         <form onSubmit={handleSubmit} className="p-4">
             <label className='form-label me-3'>
-                Name:
+                Nome:
                 <input
                     type="text"
                     name="name"
                     className="form-control mb-2"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder='name'
+                    placeholder='Inserisci nome'
                 />
             </label>
             <label className='form-label me-3'>
-                Surname:
+                Cognome:
                 <input
                     type="text"
                     name="surname"
                     className="form-control mb-2"
                     value={formData.surname}
                     onChange={handleChange}
-                    placeholder='surname'
+                    placeholder='Inserisci cognome'
                 />
             </label>
             <label className='form-label me-3'>
-                Phone Number:
+                Numero di telefono:
                 <input
                     type="text"
                     name="number"
                     className="form-control mb-2"
                     value={formData.number}
                     onChange={handleChange}
-                    placeholder='phone number'
+                    placeholder='Inserisci il numero di telefono'
                 />
             </label>
             <label className='form-label me-3'>
-                Emergency Number:
+                Numero di emergenza:
                 <input
                     type="text"
                     name="emergencyNumber"
                     className="form-control mb-2"
                     value={formData.emergencyNumber}
                     onChange={handleChange}
-                    placeholder='emergency number'
+                    placeholder='Inserisci numero di emergenza'
                 />
             </label>
             <label className='form-label me-3'>
@@ -108,18 +108,18 @@ function NewTraveller() {
                 />
             </label>
             <label className='form-label me-3'>
-                Nationality:
+                Nazionalità:
                 <input
                     type="text"
                     name="nationality"
                     className="form-control mb-2"
                     value={formData.nationality}
                     onChange={handleChange}
-                    placeholder='nationality'
+                    placeholder='Inserisci la nazionalità'
                 />
             </label>
             <label className='form-label me-3'>
-                Id Code:
+                Codice fiscale:
                 <input
                     type="text"
                     name="idCode"
@@ -132,8 +132,7 @@ function NewTraveller() {
                     placeholder='id'
                 />
             </label>
-
-            <button type="submit" className="btn btn-primary">Add Traveller</button>
+            <button type="submit" className="btn btn-primary"><i className="fa-solid fa-user-plus"></i> </button>
         </form>
     );
 }

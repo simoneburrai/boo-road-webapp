@@ -26,13 +26,13 @@ const SingleTraveller = () => {
 
     if (currentTraveller && currentTravellers.length > 0) {
         return <div className="card p-4">
-            <div className="my-1"><strong>Nome: </strong>{currentTraveller.name}</div>
-            <div className="my-1"><strong>Cognome: </strong>{currentTraveller.surname}</div>
-            <div className="my-1"><strong>Numero di telefono: </strong>{currentTraveller.number}</div>
-            <div className="my-1"><strong>Email: </strong>{currentTraveller.email}</div>
-            <div className="my-1"><strong>Nazionalità: </strong>{currentTraveller.nationality}</div>
-            <div className="my-1"><strong>Codice fiscale: </strong>{currentTraveller.idCode}</div>
-            <div className="mb-3"><strong>Numero di emergenza: </strong>{currentTraveller.emergencyNumber}</div>
+            <div className="my-1"><strong><i className="fa-solid fa-user"></i> Nome: </strong>{currentTraveller.name}</div>
+            <div className="my-1"><strong><i className="fa-solid fa-user"></i> Cognome: </strong>{currentTraveller.surname}</div>
+            <div className="my-1"><strong><i className="fa-solid fa-phone"></i> Numero di telefono: </strong>{currentTraveller.number}</div>
+            <div className="my-1"><strong><i className="fa-solid fa-envelope"></i> Email: </strong>{currentTraveller.email}</div>
+            <div className="my-1"><strong><i className="fa-solid fa-earth-americas"></i> Nazionalità: </strong>{currentTraveller.nationality}</div>
+            <div className="my-1"><strong><i className="fa-solid fa-id-card"></i> Codice fiscale: </strong>{currentTraveller.idCode}</div>
+            <div className="mb-3"><strong><i className="fa-solid fa-exclamation ps-1 pe-2"></i> Numero di emergenza: </strong>{currentTraveller.emergencyNumber}</div>
             <button className="btn btn-primary w-50  m-auto" onClick={handleClick}>Contatta</button>
         </div>
     }

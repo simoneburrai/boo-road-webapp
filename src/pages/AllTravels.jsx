@@ -23,7 +23,7 @@ const AllTravels = () => {
     return (
         <div>
             <div className="d-flex flex-row mb-5 justify-content-between mx-3">
-                <h2 className=" text-center">Naviga tra tutti i nostri viaggi!</h2>
+                <h2 className=" text-center">Tutti i nostri viaggi</h2>
                 <SearchBarTravel onSearch={handleSearch} />
             </div>
             <TravelCard travels={filteredTravels} />
