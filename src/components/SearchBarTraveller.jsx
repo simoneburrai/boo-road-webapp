@@ -17,7 +17,7 @@ const SearchBarTraveller = ({ onSearch }) => {
             onChange={(e)=>setSearchValue(e.target.value)}
             className="form-control w-50 mb-4"
         />
-        <button type="submit">Cerca</button>
+        <button type="submit" class="btn btn-light">Cerca</button>
         </form>
         
     )
