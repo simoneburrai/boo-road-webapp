@@ -403,7 +403,7 @@ const travels = [
     "price": 580.0,
     "discountPrice": null,
     "state": "active",
-    "image": "https://www.aziendaturismopositano.it/wp-content/uploads/2025/03/mappa-costiera-amalfitana.webp",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrglNIxmJs-UMzNSm1GuxkeUJfx4nEEdMExg&s",
     "description": "Rilassati tra i paesaggi mozzafiato e i borghi pittoreschi della Costiera Amalfitana.",
     "flight": {
       "airline": "EasyJet",

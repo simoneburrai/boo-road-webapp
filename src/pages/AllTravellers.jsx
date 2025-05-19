@@ -20,7 +20,8 @@ const AllTravellers = ()=> {
             } else {
                 const filtered = currentTravellers.filter(traveller =>
                     traveller.name.toLowerCase().includes(name.toLowerCase()) ||
-                    traveller.surname.toLowerCase().includes(name.toLowerCase()));
+                    traveller.surname.toLowerCase().includes(name.toLowerCase()) ||
+                 traveller.nationality.toLowerCase().includes(name.toLowerCase()));
                 setFilteredTravellers(filtered);
             }
         };

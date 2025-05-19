@@ -13,9 +13,9 @@ const TravelDetailCard = ({ travel }) => {
                 <div className="detail-img w-50">
                     <img className="w-100 rounded" src={travel.image} alt={travel.destination.city} />
                 </div>
-                <div className="w-100 p-4">
-                    <h3 className="p-2 m-4 text-center fst-italic text-danger fs-1">{travel.destination.city}</h3>
-                    <div className="d-flex flex-row justify-content-between align-items-center">
+                <div className="w-50 p-4 px-5">
+                    <h3 className="p-2 m-4 text-center fst-italic fs-1">{travel.destination.city}</h3>
+                    <div className="d-flex flex-row justify-content-between align-items-center mb-5">
                         <h4 className="mb-3">{formattedStart}</h4>
                         <h5 className="p-2 mb-3 fst-italic">{travel.duration} giorni</h5>
                         <h4 className="p-2 mb-3">{formattedEnd}</h4>
@@ -31,7 +31,7 @@ const TravelDetailCard = ({ travel }) => {
             <div className="p-2">
                 <p className="fst-italic fs-3">{travel.description}</p>
                 {flight && <div className="p-2">
-                    <h5 className="text-danger fs-3 mb-4">Dettagli volo</h5>
+                    <h5 className="fs-3 mb-4">Dettagli volo</h5>
                     <ul className="list-unstyled fs-5">
                         <li>
                             Compagnia: <span className="fw-bold">{flight.airline}</span>

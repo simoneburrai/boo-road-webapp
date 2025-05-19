@@ -6,16 +6,24 @@
         background-color: rgb(255, 255, 255);
     }
 
-    h2 {
-        color: black;
+    a {
+        color: inherit;
+    }
+
+    header {
+        background-color: #9ECBFF;
+    }
+
+    .durata {
+        border: 3px solid rgba(255, 0, 0, 0.412);
+        border-radius: 30px;
+        background-color: rgba(255, 0, 0, 0.412);
     }
 
     .boroad {
-        color: black;
         font-weight: 900;
         font-family: "Saira Stencil One", sans-serif;
         text-transform: capitalize;
-
     }
 
     .boroad span {
@@ -23,6 +31,7 @@
     }
 
     label {
+        background-color: #d1e6ff;
         display: block;
         width: 50px;
         height: 50px;
@@ -50,6 +59,15 @@
         color: #ffffff;
     }
 
+    header:has(#toggleMode:checked) {
+        background: rgb(33, 33, 33);
+        color: #ffffff;
+    }
+
+    body:has(#toggleMode:checked) .card {
+        background: #909090;
+    }
+
 
     @media (prefers-color-scheme:dark) {
         body {
@@ -63,4 +81,9 @@
         label {
             color: white;
         }
+    }
+
+
+    .line-through {
+        text-decoration: line-through;
     }
