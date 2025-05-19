@@ -6,27 +6,27 @@ import SingleTravel from "./pages/SingleTravel"
 import AllTravellers from "./pages/AllTravellers"
 import SingleTraveller from "./pages/SingleTraveller"
 import Contacts from "./pages/Contacts"
-import {TravelProvider} from "./contexts/TravelContext"
+import { TravelProvider } from "./contexts/TravelContext"
 import NotFound from "./pages/NotFound"
-import NewTraveller from "./pages/NewTraveller"
+import NewTravel from "./pages/NewTravel"
 
 function App() {
   return (
     <TravelProvider>
-    <BrowserRouter>
-    <Routes>
-      <Route element={<MainDefault/>}>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/travels" element={<AllTravels/>}/>
-        <Route path="/travels/:travelId" element={<SingleTravel/>}></Route>
-         <Route path="/travels/:travelId/newtraveller" element={<NewTraveller/>}></Route>
-        <Route path="/travels/:travelId/travellers" element={<AllTravellers/>}></Route>
-        <Route path="/travels/:travelId/travellers/:id" element={<SingleTraveller/>}></Route>
-        <Route path="/contacts" element={<Contacts/>}/>
-      </Route>
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<MainDefault />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/travels" element={<AllTravels />} />
+            <Route path="/travels/:travelId" element={<SingleTravel />}></Route>
+            <Route path="/travels/:travelId/travellers" element={<AllTravellers />}></Route>
+            <Route path="/travels/:travelId/travellers/:id" element={<SingleTraveller />}></Route>
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/newTravel" element={<NewTravel />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </TravelProvider>
   )
 }
