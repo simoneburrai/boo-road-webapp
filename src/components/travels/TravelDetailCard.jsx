@@ -8,14 +8,14 @@ const TravelDetailCard = ({ travel }) => {
     const formattedEnd = format(new Date(travel.end), "d MMMM yyyy", { locale: it });
 
     return (
-        <div className="card mt-5">
-            <div className=" d-flex flex-row justify-content-around mb-4">
-                <div className="detail-img w-50">
-                    <img className="w-100 rounded" src={travel.image} alt={travel.destination.city} />
+        <div className="card">
+            <div className=" d-flex flex-column flex-md-row justify-content-around mb-2 mb-lg-5">
+                <div className="detail-img image">
+                    <img className="w-100 p-2" src={travel.image} alt={travel.destination.city} />
                 </div>
-                <div className="w-50 p-4 px-5">
-                    <h3 className="p-2 m-4 text-center fst-italic fs-1">{travel.destination.city}</h3>
-                    <div className="d-flex flex-row justify-content-between align-items-center mb-5">
+                <div className=" p-1 p-lg-2 px-2 px-lg-5">
+                    <h3 className="m-2 m-lg-4 text-center fst-italic fs-1">{travel.destination.city}</h3>
+                    <div className="d-flex flex-row justify-content-between align-items-center mb-2 mb-lg-5">
                         <h4 className="mb-3">{formattedStart}</h4>
                         <h5 className="p-2 mb-3 fst-italic">{travel.duration} giorni</h5>
                         <h4 className="p-2 mb-3">{formattedEnd}</h4>
