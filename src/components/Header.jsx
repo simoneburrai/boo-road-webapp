@@ -9,7 +9,7 @@ const Header = () => {
             <NavLink to="/newtravel" className="text-decoration-none text-uppercase fs-3 mx-4 boroad">New Travel</NavLink>
             </div> 
         </nav>
-        <input type="checkbox" name="toggleMode" id="toggleMode" /><label htmlFor="toggleMode"><i className="fas fa-sun"></i></label>
+        <input type="checkbox" name="toggleMode" id="toggleMode" /><label className="darkmode" htmlFor="toggleMode"><i className="fas fa-sun"></i></label>
     </header>
 }
 

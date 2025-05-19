@@ -12,7 +12,7 @@ const TravelCard = ({ travels }) => {
 
                     return (
                         <div className="card d-flex flex-row justify-content-around mb-4 p-3" key={travel.id}>
-                            <img className="img-fluid w-25 rounded" src={travel.image} alt="image" />
+                            <img className="rounded imagecard" src={travel.image} alt="image" />
                             <div className="w-50">
                                 <h3 className="p-2 m-4 text-center">Destinazione: {travel.destination.city}</h3>
                                 <div className="d-flex flex-row justify-content-between  mb-4 durata px-3">
