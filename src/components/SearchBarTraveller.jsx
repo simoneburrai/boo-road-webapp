@@ -3,20 +3,23 @@ import { useState } from "react";
 const SearchBarTraveller = ({ onSearch }) => {
     const [searchValue, setSearchValue] = useState("");
 
-    const handleChange = (e) => {
-        const value = e.target.value;
-        setSearchValue(value);
-        onSearch(value);
-    };
+    const handleSubmit = (e)=> {
+        e.preventDefault();
+        onSearch(searchValue);
+    }
 
     return (
-        <input
+        <form onSubmit={handleSubmit}>
+            <input
             type="text"
             placeholder="Cerca Utente"
             value={searchValue}
-            onChange={handleChange}
+            onChange={(e)=>setSearchValue(e.target.value)}
             className="form-control w-50 mb-4"
         />
+        <button type="submit">Cerca</button>
+        </form>
+        
     )
 }
 
