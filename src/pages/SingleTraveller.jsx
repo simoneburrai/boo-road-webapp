@@ -3,6 +3,11 @@ import { useTravels } from "../contexts/TravelContext"
 import { useEffect } from "react";
 
 const SingleTraveller = () => {
+
+    const handleClick = () => { //funzione per contattare il cliente
+        alert("Cliente contattato");
+    }
+
     const navigate = useNavigate();
     const { travellers } = useTravels();
     let { id, travelId } = useParams();
@@ -28,7 +33,7 @@ const SingleTraveller = () => {
             <div>{currentTraveller.nationality}</div>
             <div>{currentTraveller.idCode}</div>
             <div>{currentTraveller.emergencyNumber}</div>
-            <button className="btn btn-primary mb-4">Contatta</button>
+            <button className="btn btn-primary mb-4" onClick={handleClick}>Contatta</button>
         </div>
     }
 
