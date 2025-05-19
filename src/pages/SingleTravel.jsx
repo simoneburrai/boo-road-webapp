@@ -13,11 +13,13 @@ const SingleTravel = () => {
     const currentTravel = travels.find(travel => travel.id === travelId);
     const currentOperators = operators.filter(operator => operator.travelId === travelId);
 
+
     useEffect(()=> {
-        if(!currentTravel || currentOperators.length === 0){
+        if(!currentTravel){
             navigate("/notfound");
         }
     }, [currentOperators, currentTravel, navigate])
+
     return (
         <div>
             {currentTravel &&  <>
