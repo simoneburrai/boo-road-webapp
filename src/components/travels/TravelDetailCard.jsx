@@ -14,7 +14,7 @@ const TravelDetailCard = ({ travel }) => {
                     <img className="w-100 p-2 " src={travel.image} alt={travel.destination.city} />
                 </div>
                 <div className="p-3 px-2 px-lg-5 detailtext">
-                    <h3 className="m-2 m-lg-4 text-center fst-italic fs-1">{travel.destination.city}</h3>
+                    <h3 className="m-2 m-lg-4 text-center fst-italic fs-1"><i class="fa-solid fa-plane"></i> {travel.destination.city}</h3>
                     <div className="d-flex flex-row justify-content-between align-items-center mb-2 mb-lg-5">
                         <h4 className="mb-3 traveltext">{formattedStart}</h4>
                         <h5 className="p-2 mb-3 fst-italic traveltext">{travel.duration} giorni</h5>
