@@ -31,9 +31,9 @@ const SingleTravel = () => {
                         <Link to={`/travels/${travelId}/travellers/newTraveller`} className="btn btn-primary" >aggiungi viaggiatore</Link>
                     </div>
                     {currentOperators.map(operator => {
-                        return <>
+                        return (
                             <OperatorCard operator={operator} key={operator.id} />
-                        </>
+                        )
                     })}
                 </div>
                 <EmergencyCard travelId={travelId} />
