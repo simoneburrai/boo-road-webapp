@@ -57,97 +57,116 @@ function TravelForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
+            <label className='form-label me-3'>
                 City:
                 <input
                     type="text"
                     name="destination.city"
                     value={formData.destination.city}
                     onChange={handleChange}
+                    className='form-control'
+                    placeholder='City'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Country:
                 <input
                     type="text"
                     name="destination.country"
                     value={formData.destination.country}
                     onChange={handleChange}
+                    className='form-control'
+                    placeholder='Country'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Start Date:
                 <input
                     type="date"
                     name="start"
                     value={formData.start}
                     onChange={handleChange}
+                    className='form-control'
+
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 End Date:
                 <input
                     type="date"
                     name="end"
                     value={formData.end}
                     onChange={handleChange}
+                    className='form-control'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Duration:
                 <input
                     type="number"
                     name="duration"
                     value={formData.duration}
                     onChange={handleChange}
+                    className='form-control'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Travel Type:
                 <input
                     type="text"
                     name="travelType"
                     value={formData.travelType}
                     onChange={handleChange}
+                    className='form-control'
+                    placeholder='Travel Type'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Price:
                 <input
                     type="number"
                     name="price"
                     value={formData.price}
                     onChange={handleChange}
+                    className='form-control'
+                    placeholder='Price'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Discount Price:
                 <input
                     type="number"
                     name="discountPrice"
                     value={formData.discountPrice || ''}
                     onChange={handleChange}
+                    className='form-control'
+                    placeholder='0'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Image URL:
                 <input
                     type="text"
                     name="image"
                     value={formData.image}
                     onChange={handleChange}
+                    className='form-control'
+                    placeholder='URL'
                 />
             </label>
-            <label>
+            <br />
+            <label className='form-label me-3'>
                 Description:
                 <textarea
                     name="description"
                     value={formData.description}
                     onChange={handleChange}
+                    className='form-control'
+                    placeholder='max 400 char'
                 ></textarea>
             </label>
 
-            <button type="submit">Submit</button>
+            <button type="submit" className='btn btn-primary me-3'>Submit</button>
             <Link to="/travels">Travel List</Link>
         </form>
     );

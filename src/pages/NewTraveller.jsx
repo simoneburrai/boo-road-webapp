@@ -52,7 +52,7 @@ function NewTraveller() {
 
     return (
         <form onSubmit={handleSubmit} className="p-4">
-            <label>
+            <label className='form-label me-3'>
                 Name:
                 <input
                     type="text"
@@ -60,9 +60,10 @@ function NewTraveller() {
                     className="form-control mb-2"
                     value={formData.name}
                     onChange={handleChange}
+                    placeholder='name'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Surname:
                 <input
                     type="text"
@@ -70,9 +71,10 @@ function NewTraveller() {
                     className="form-control mb-2"
                     value={formData.surname}
                     onChange={handleChange}
+                    placeholder='surname'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Phone Number:
                 <input
                     type="text"
@@ -80,9 +82,10 @@ function NewTraveller() {
                     className="form-control mb-2"
                     value={formData.number}
                     onChange={handleChange}
+                    placeholder='phone number'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Emergency Number:
                 <input
                     type="text"
@@ -90,9 +93,10 @@ function NewTraveller() {
                     className="form-control mb-2"
                     value={formData.emergencyNumber}
                     onChange={handleChange}
+                    placeholder='emergency number'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Email:
                 <input
                     type="email"
@@ -100,9 +104,10 @@ function NewTraveller() {
                     className="form-control mb-2"
                     value={formData.email}
                     onChange={handleChange}
+                    placeholder='email@email.com'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Nationality:
                 <input
                     type="text"
@@ -110,9 +115,10 @@ function NewTraveller() {
                     className="form-control mb-2"
                     value={formData.nationality}
                     onChange={handleChange}
+                    placeholder='nationality'
                 />
             </label>
-            <label>
+            <label className='form-label me-3'>
                 Id Code:
                 <input
                     type="text"
@@ -123,6 +129,7 @@ function NewTraveller() {
                     required
                     pattern="[A-Z0-9]{16}"
                     title="Inserisci un codice fiscale valido di 16 caratteri"
+                    placeholder='id'
                 />
             </label>
 
