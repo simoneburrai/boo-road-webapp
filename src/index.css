@@ -111,6 +111,10 @@
             font-size: 2vw;
         }
 
+        .traveltext {
+            font-size: 2.5vw;
+        }
+
         .travelcard h3 {
             font-size: 4vw;
         }
@@ -129,6 +133,16 @@
 
         .imagecard {
             max-width: 35%;
+        }
+    }
+
+    .detailtext {
+        min-width: 50%;
+    }
+
+    @media screen and (max-width: 992px) {
+        .traveltext {
+            font-size: 2vw;
         }
     }
 
@@ -155,4 +169,10 @@
         .imagecard {
             max-width: 45%;
         }
+
+
+        .traveltext {
+            font-size: 4.6vw;
+        }
+
     }
