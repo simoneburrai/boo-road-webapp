@@ -25,19 +25,21 @@ const AllTravellers = ()=> {
             }
         };
 
-    useEffect(()=> {
-        if(currentTravellers.length === 0){
-            navigate("/notfound");
-        }
-    }, [currentTravellers, navigate])
+    // useEffect(()=> {
+    //     if(currentTravellers.length === 0){
+    //         navigate("/notfound");
+    //     }
+    // }, [currentTravellers, navigate])
 
-    if(currentTravellers){
+    if(currentTravellers && currentTravellers.length > 0){
         return <div>
         <SearchBarTraveller onSearch={handleSearch} />
          {filteredTravellers.map(traveller =>{
             return <TravellerCard traveller={traveller} key={traveller.id}/>
         })}
     </div>
+    }else {
+        return <div>Impossibile visualizzare i clienti dei viaggi passati...</div>
     }
 }
 
