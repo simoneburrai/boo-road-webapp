@@ -1,45 +1,52 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
+import { useEffect } from "react";
 import OperatorCard from "../components/travels/OperatorCard";
 import TravelDetailCard from "../components/travels/TravelDetailCard";
-import { useTravels } from "../contexts/TravelContext"
 import EmergencyCard from "../components/travels/EmergencyCard";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useTravels } from "../contexts/TravelContext";
 
 const SingleTravel = () => {
     const navigate = useNavigate();
     let { travelId } = useParams();
     travelId = parseInt(travelId);
-    const { travels, operators } = useTravels()
+    const { travels, operators } = useTravels();
+
     const currentTravel = travels.find(travel => travel.id === travelId);
     const currentOperators = operators.filter(operator => operator.travelId === travelId);
 
+    // Calcola se il viaggio è terminato
+    const isTravelEnded = currentTravel.end && new Date(currentTravel.end) < new Date();
 
     useEffect(() => {
         if (!currentTravel) {
             navigate("/notfound");
         }
-    }, [currentOperators, currentTravel, navigate])
+    }, [currentTravel, navigate]);
 
     return (
         <div>
             {currentTravel && <>
                 <TravelDetailCard travel={currentTravel} />
-                <div>
-                    <div className="d-flex justify-content-between align-items-center">
-                        <h2 className="mt-3">Operatori</h2>
-                        <Link to={`/travels/${travelId}/travellers/newTraveller`} className="btn btn-primary" >aggiungi viaggiatore</Link>
-                    </div>
-                    {currentOperators.map(operator => {
-                        return (
+
+                {!isTravelEnded && (
+                    <div>
+                        <div className="d-flex justify-content-between align-items-center">
+                            <h2 className="mt-3">Operatori</h2>
+                            <Link to={`/travels/${travelId}/travellers/newTraveller`} className="btn btn-primary">
+                                aggiungi viaggiatore
+                            </Link>
+                        </div>
+
+                        {currentOperators.map(operator => (
                             <OperatorCard operator={operator} key={operator.id} />
-                        )
-                    })}
-                </div>
+                        ))}
+                    </div>
+                )}
+
                 <EmergencyCard travelId={travelId} />
             </>}
         </div>
-    )
+    );
 }
 
 export default SingleTravel;
