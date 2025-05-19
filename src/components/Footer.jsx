@@ -2,9 +2,9 @@ const Footer = () => {
     return <footer className="bg-dark text-light p-5 mt-5">
         <div className="container">
             <div className="row">
-                <div className="col-md-3">
+                <div className="col-md-3 col-12 text-center">
                     <h5>Founder</h5>
-                    <ul className="list-unstyled fst-italic">
+                    <ul className="list-unstyled fst-italic ">
                         <li>David Bassani</li>
                         <li>Simone Burrai</li>
                         <li>Carlo Costa</li>
@@ -13,15 +13,15 @@ const Footer = () => {
                         <li>Pierdomenico Pacilio</li>
                     </ul>
                 </div>
-                <div className="col-md-6 text-center">
+                <div className="col-md-6 text-center col-sm-12">
                     <h5>Sede Legale</h5>
                     <p>Via delle Rosine, 124 </p>
                     <p>20100 Milano (MI)</p>
                     <p>Italia</p>
                 </div>
-                <div className="col-md-3 text-end">
+                <div className="col-md-3 text-md-end text-center col-12">
                     <h5>Seguici sui social</h5>
-                    <div className="d-flex justify-content-end">
+                    <div className="d-flex justify-content-md-end justify-content-center">
                         <a href="#" target="_blank" className="text-light me-2"><i className="fa-brands fa-facebook"></i></a>
                         <a href="#" target="_blank" className="text-light me-2"><i className="fa-brands fa-twitter"></i></a>
                         <a href="#" target="_blank" className="text-light me-2"><i className="fa-brands fa-instagram"></i></a>

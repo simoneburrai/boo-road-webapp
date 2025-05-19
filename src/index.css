@@ -102,8 +102,13 @@
             width: 48%;
         }
 
-        header {
+        header nav {
             font-size: 4vw;
+        }
+
+        .travelcard h4,
+        h5 {
+            font-size: 2vw;
         }
 
         .darkmode {
@@ -112,6 +117,10 @@
             line-height: 35px;
             border-radius: 35px;
             font-size: 15px;
+        }
+
+        .imagecard {
+            max-width: 35%;
         }
     }
 
@@ -126,5 +135,9 @@
             line-height: 25px;
             border-radius: 25px;
             font-size: 15px;
+        }
+
+        .imagecard {
+            max-width: 45%;
         }
     }
