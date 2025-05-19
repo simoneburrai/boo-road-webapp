@@ -2,7 +2,7 @@ const Footer = () => {
     return <footer className="bg-dark text-light p-5 mt-5">
         <div className="container">
             <div className="row">
-                <div className="col-md-3 col-12 text-center">
+                <div className="col-md-3 col-12 text-center text-md-start">
                     <h5>Founder</h5>
                     <ul className="list-unstyled fst-italic ">
                         <li>David Bassani</li>
