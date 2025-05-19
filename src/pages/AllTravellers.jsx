@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import {useTravels} from "../contexts/TravelContext"
 import TravellerCard from "../components/travellers/TravellerCard"
 import { useEffect, useState } from "react";
@@ -40,7 +40,10 @@ const AllTravellers = ()=> {
         })}
     </div>
     }else {
-        return <div>Impossibile visualizzare i clienti dei viaggi passati...</div>
+        return <div className="text-center text-white fs-1">
+            Impossibile visualizzare i clienti dei viaggi passati...
+        <div><Link to="/" className="btn btn-primary mb-4">Torna alla Home</Link></div>
+        </div>
     }
 }
 
