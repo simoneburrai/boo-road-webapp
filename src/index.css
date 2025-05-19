@@ -1,3 +1,7 @@
+    img {
+        display: block;
+    }
+
     body {
         background-color: rgb(255, 255, 255);
     }
@@ -25,16 +29,14 @@
     }
 
     #toggleMode:checked+label {
-        background-color: #eee;
-        color: #333;
+        background-color: rgb(49, 49, 49);
+        color: #ffffff;
     }
 
-    #toggleMode+label,
-    #toggleMode:checked~h2 {
-        background-color: #111;
-        color: #eee;
+    body:has(#toggleMode:checked) {
+        background: rgb(72 72 72);
+        color: #ffffff;
     }
-
 
 
     @media (prefers-color-scheme:dark) {
