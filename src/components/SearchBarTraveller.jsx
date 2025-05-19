@@ -9,15 +9,15 @@ const SearchBarTraveller = ({ onSearch }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="mb-4">
+        <form onSubmit={handleSubmit} className="mb-4 d-flex justify-content-center">
             <input
                 type="text"
                 placeholder="Cerca Utente per Nome, Cognome, Nazionalità"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                className="form-control w-50 mb-4"
+                className="form-control w-50 mb-4 me-3"
             />
-            <button type="submit" class="btn btn-light">Cerca</button>
+            <button type="submit" className="mb-4 btn btn-light">Cerca</button>
         </form>
 
     )
