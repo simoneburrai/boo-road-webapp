@@ -1,22 +1,17 @@
-<<<<<<< HEAD
+
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTravels } from "../contexts/TravelContext"
-=======
-import { useParams, Link } from "react-router-dom";
-import {useTravels} from "../contexts/TravelContext"
->>>>>>> a9c8349577f715378050cb1cc8d5f804d0687c17
+
 import TravellerCard from "../components/travellers/TravellerCard"
 import { useState } from "react";
 import SearchBarTraveller from "../components/SearchBarTraveller";
 
-<<<<<<< HEAD
+
 const AllTravellers = () => {
     const navigate = useNavigate();
     let { travelId } = useParams();
-=======
-const AllTravellers = ()=> {
-    let {travelId} = useParams();
->>>>>>> a9c8349577f715378050cb1cc8d5f804d0687c17
+
+
     travelId = parseInt(travelId);
     const { travellers } = useTravels()
     const currentTravellers = travellers.filter(traveller => traveller.travelId === travelId)
@@ -43,11 +38,13 @@ const AllTravellers = ()=> {
     // }, [currentTravellers, navigate])
 
     if (currentTravellers && currentTravellers.length > 0) {
-        return <div>
+        return <div >
             <SearchBarTraveller onSearch={handleSearch} />
-            {filteredTravellers.map(traveller => {
-                return <TravellerCard traveller={traveller} key={traveller.id} />
-            })}
+            <div className="d-flex flex-wrap">
+                {filteredTravellers.map(traveller => {
+                    return <TravellerCard className="" traveller={traveller} key={traveller.id} />
+                })}
+            </div>
         </div>
     } else {
         return <div className="text-center text-white fs-1">
