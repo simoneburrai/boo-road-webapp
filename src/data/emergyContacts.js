@@ -268,6 +268,196 @@ const emergencyContacts = [
         "ambulance": "112"
       }
     }
+  },
+  {
+    "travelId": 21,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 22,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 23,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 24,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 25,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 26,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 27,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 28,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 29,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
+  },
+  {
+    "travelId": 30,
+    "contactName": "Ayşe Demir",
+    "phone": "+90 352 337 52 00",
+    "email": "support.cappadocia@example.com",
+    "location": "Centro Informazioni Turistiche, Göreme",
+    "internationalSupport": {
+      "embassy": {
+        "name": "Ambasciata d'Italia ad Ankara",
+        "phone": "+90 312 457 4200",
+        "email": "ambasciata.ankara@esteri.it",
+        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
+      },
+      "emergencyNumbers": {
+        "police": "155",
+        "ambulance": "112"
+      }
+    }
   }
 ];
 

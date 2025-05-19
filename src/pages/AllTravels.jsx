@@ -19,6 +19,7 @@ const AllTravels = () => {
             setFilteredTravels(filtered);
         }
     };
+    
     return (
         <div>
             <div className="d-flex flex-row my-5 justify-content-between mx-3">

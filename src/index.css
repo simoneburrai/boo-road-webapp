@@ -1,9 +1,52 @@
-/* Reset */
+    body {
+        background-color: rgb(255, 255, 255);
+    }
 
-img {
-    display: block;
-}
+    h2 {
+        color: black;
+    }
 
-body {
-    background-color: rgba(0, 0, 0, 0.734);
-}
+    label {
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    #toggleMode {
+        display: none;
+    }
+
+    #toggleMode:checked+label {
+        background-color: #eee;
+        color: #333;
+    }
+
+    #toggleMode+label,
+    #toggleMode:checked~h2 {
+        background-color: #111;
+        color: #eee;
+    }
+
+
+
+    @media (prefers-color-scheme:dark) {
+        body {
+            background-color: rgb(72, 72, 72);
+        }
+
+        h2 {
+            color: white;
+        }
+
+        label {
+            color: white;
+        }
+    }
