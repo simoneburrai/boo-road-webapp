@@ -25,15 +25,15 @@ const SingleTraveller = () => {
 
 
     if (currentTraveller && currentTravellers.length > 0) {
-        return <div>
-            <div>{currentTraveller.name}</div>
-            <div>{currentTraveller.surname}</div>
-            <div>{currentTraveller.number}</div>
-            <div>{currentTraveller.email}</div>
-            <div>{currentTraveller.nationality}</div>
-            <div>{currentTraveller.idCode}</div>
-            <div>{currentTraveller.emergencyNumber}</div>
-            <button className="btn btn-primary mb-4" onClick={handleClick}>Contatta</button>
+        return <div className="card col-lg-3 p-3">
+            <div><strong>Nome: </strong>{currentTraveller.name}</div>
+            <div><strong>Cognome: </strong>{currentTraveller.surname}</div>
+            <div><strong>Numero di telefono: </strong>{currentTraveller.number}</div>
+            <div><strong>Email: </strong>{currentTraveller.email}</div>
+            <div><strong>Nazionalità: </strong>{currentTraveller.nationality}</div>
+            <div><strong>Codice fiscale: </strong>{currentTraveller.idCode}</div>
+            <div className="mb-3"><strong>Numero di emergenza: </strong>{currentTraveller.emergencyNumber}</div>
+            <button className="btn btn-primary" onClick={handleClick}>Contatta</button>
         </div>
     }
 
