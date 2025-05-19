@@ -14,7 +14,10 @@ const AllTravels = () => {
             setFilteredTravels(travels);
         } else {
             const filtered = travels.filter(travel =>
-                travel.destination.city.toLowerCase().includes(city.toLowerCase())
+                travel.destination.city.toLowerCase().includes(city.toLowerCase()) ||
+                travel.destination.country.toLowerCase().includes(city.toLowerCase()) ||
+                 travel.description.toLowerCase().includes(city.toLowerCase()) ||
+                  travel.travelType.toLowerCase().includes(city.toLowerCase()) 
             );
             setFilteredTravels(filtered);
         }
