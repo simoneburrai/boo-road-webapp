@@ -20,7 +20,7 @@ const TravelCard = ({ travels }) => {
                                     <h5 className="p-1 p-md-2 text-center">{travel.duration} Giorni</h5>
                                     <h4 className="p-1 p-md-2 text-center">Fine: {formattedEnd}</h4>
                                 </div>
-                                <div className="d-flex flex-row justify-content-between">
+                                <div className="d-flex flex-row flex-wrap justify-content-between">
                                     <h6 className={`mb-4 p-1 p-md-2 px-3 price ${travel.discountPrice && "line-through"}`}>{travel.price}€</h6>
                                     {travel.discountPrice && <h6 className="mb-4 p-md-2 px-3 discount">{travel.discountPrice}€</h6>}
                                     <Link to={`/travels/${travel.id}`} className="btn btn-primary mb-4 p-md-2">Dettagli</Link>
