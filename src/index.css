@@ -103,7 +103,7 @@
         }
 
         header nav {
-            font-size: 4vw;
+            font-size: 3vw;
         }
 
         .travelcard h4,
@@ -129,6 +129,13 @@
 
         .imagecard {
             max-width: 35%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        header nav {
+            font-size: 2.8vw;
         }
     }
 
