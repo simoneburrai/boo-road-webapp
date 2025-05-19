@@ -16,7 +16,12 @@
 
     .imagecard {
         max-width: 25%;
+        object-fit: cover;
     }
+
+    .price {}
+
+    .discount {}
 
     .card {
         background-color: #cde4ff5b;

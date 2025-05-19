@@ -21,8 +21,8 @@ const TravelCard = ({ travels }) => {
                                     <h4 className="p-2 text-center">Fine: {formattedEnd}</h4>
                                 </div>
                                 <div className="d-flex flex-row justify-content-between">
-                                    <h4 className={`mb-4 border rounded p-2 btn btn-success ${travel.discountPrice && "line-through"}`}>{travel.price}€</h4>
-                                    {travel.discountPrice && <h4 className="mb-4 btn btn-danger">{travel.discountPrice}€</h4>}
+                                    <h4 className={`mb-4 border rounded p-2 price ${travel.discountPrice && "line-through"}`}>{travel.price}€</h4>
+                                    {travel.discountPrice && <h4 className="mb-4 border rounded p-2 discount">{travel.discountPrice}€</h4>}
                                     <Link to={`/travels/${travel.id}`} className="btn btn-primary mb-4">dettagli</Link>
                                 </div>
                             </div>
