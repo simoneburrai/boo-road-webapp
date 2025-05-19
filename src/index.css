@@ -10,6 +10,18 @@
         color: black;
     }
 
+    .boroad {
+        color: black;
+        font-weight: 900;
+        font-family: "Saira Stencil One", sans-serif;
+        text-transform: capitalize;
+
+    }
+
+    .boroad span {
+        color: rgb(255, 0, 0);
+    }
+
     label {
         display: block;
         width: 50px;
