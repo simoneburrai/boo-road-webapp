@@ -24,7 +24,7 @@ function App() {
             <Route path="/travels/:travelId/travellers/:id" element={<SingleTraveller />}></Route>
             <Route path="/travels/:travelId/travellers/newTraveller" element={<NewTraveller />}></Route>
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/newTravel" element={<NewTravel />} />
+            <Route path="/newtravel" element={<NewTravel />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

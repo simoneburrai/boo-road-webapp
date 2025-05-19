@@ -14,10 +14,30 @@
         background-color: #9ECBFF;
     }
 
+    .imagecard {
+        max-width: 25%;
+        object-fit: cover;
+    }
+
+    .price {
+        border: 1px solid green;
+        border-radius: 20px;
+
+    }
+
+    .discount {
+        border: 1px solid rgb(255, 0, 0);
+        border-radius: 20px;
+    }
+
+    .card {
+        background-color: #cde4ff5b;
+    }
+
     .durata {
-        border: 3px solid rgba(255, 0, 0, 0.412);
+        border: 0px solid rgba(0, 0, 0, 0.412);
         border-radius: 30px;
-        background-color: rgba(255, 0, 0, 0.412);
+        background-color: #a7cffd84;
     }
 
     .boroad {
@@ -30,7 +50,7 @@
         color: rgb(255, 0, 0);
     }
 
-    label {
+    .darkmode {
         background-color: #d1e6ff;
         display: block;
         width: 50px;
@@ -49,7 +69,7 @@
         display: none;
     }
 
-    #toggleMode:checked+label {
+    #toggleMode:checked+.darkmode {
         background-color: rgb(49, 49, 49);
         color: #ffffff;
     }
@@ -65,22 +85,8 @@
     }
 
     body:has(#toggleMode:checked) .card {
-        background: #909090;
-    }
-
-
-    @media (prefers-color-scheme:dark) {
-        body {
-            background-color: rgb(72, 72, 72);
-        }
-
-        h2 {
-            color: white;
-        }
-
-        label {
-            color: white;
-        }
+        background: #274566;
+        color: white;
     }
 
 

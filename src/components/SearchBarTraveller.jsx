@@ -12,7 +12,7 @@ const SearchBarTraveller = ({ onSearch }) => {
         <form onSubmit={handleSubmit}>
             <input
             type="text"
-            placeholder="Cerca Utente"
+            placeholder="Cerca Utente per Nome, Cognome, Nazionalità"
             value={searchValue}
             onChange={(e)=>setSearchValue(e.target.value)}
             className="form-control w-50 mb-4"
