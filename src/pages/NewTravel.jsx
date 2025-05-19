@@ -58,29 +58,29 @@ function TravelForm() {
     return (
         <form onSubmit={handleSubmit}>
             <label className='form-label me-3'>
-                City:
+                Città:
                 <input
                     type="text"
                     name="destination.city"
                     value={formData.destination.city}
                     onChange={handleChange}
                     className='form-control'
-                    placeholder='City'
+                    placeholder='Inserisci la città'
                 />
             </label>
             <label className='form-label me-3'>
-                Country:
+                Paese:
                 <input
                     type="text"
                     name="destination.country"
                     value={formData.destination.country}
                     onChange={handleChange}
                     className='form-control'
-                    placeholder='Country'
+                    placeholder='Inserisci il Paese'
                 />
             </label>
             <label className='form-label me-3'>
-                Start Date:
+                Partenza:
                 <input
                     type="date"
                     name="start"
@@ -91,7 +91,7 @@ function TravelForm() {
                 />
             </label>
             <label className='form-label me-3'>
-                End Date:
+                Arrivo:
                 <input
                     type="date"
                     name="end"
@@ -101,7 +101,7 @@ function TravelForm() {
                 />
             </label>
             <label className='form-label me-3'>
-                Duration:
+                Durata:
                 <input
                     type="number"
                     name="duration"
@@ -111,29 +111,29 @@ function TravelForm() {
                 />
             </label>
             <label className='form-label me-3'>
-                Travel Type:
+                Tipo di viaggio:
                 <input
                     type="text"
                     name="travelType"
                     value={formData.travelType}
                     onChange={handleChange}
                     className='form-control'
-                    placeholder='Travel Type'
+                    placeholder='Inserisci il tipo di viaggio'
                 />
             </label>
             <label className='form-label me-3'>
-                Price:
+                Prezzo:
                 <input
                     type="number"
                     name="price"
                     value={formData.price}
                     onChange={handleChange}
                     className='form-control'
-                    placeholder='Price'
+                    placeholder='Inserisci il prezzo'
                 />
             </label>
             <label className='form-label me-3'>
-                Discount Price:
+                Prezzo scontato:
                 <input
                     type="number"
                     name="discountPrice"
@@ -144,19 +144,19 @@ function TravelForm() {
                 />
             </label>
             <label className='form-label me-3'>
-                Image URL:
+                Immagine:
                 <input
                     type="text"
                     name="image"
                     value={formData.image}
                     onChange={handleChange}
                     className='form-control'
-                    placeholder='URL'
+                    placeholder='Inserisci immagine'
                 />
             </label>
             <br />
             <label className='form-label me-3'>
-                Description:
+                Descrizione:
                 <textarea
                     name="description"
                     value={formData.description}
@@ -165,10 +165,11 @@ function TravelForm() {
                     placeholder='max 400 char'
                 ></textarea>
             </label>
-
-            <button type="submit" className='btn btn-primary me-3'>Invio</button>
-            <Link to="/travels" className='btn btn-primary me-3'>Lista viaggi</Link>
-            <Link to="/" className='btn btn-primary me-3'>Home</Link>
+            <div className='mt-3'>
+                <button type="submit" className='btn btn-primary me-3'>Invio</button>
+                <Link to="/travels" className='btn btn-primary me-3'>Lista viaggi</Link>
+                <Link to="/" className='btn btn-primary me-3'>Home</Link>
+            </div>
         </form>
     );
 }
