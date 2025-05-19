@@ -4,12 +4,7 @@ import { useTravels } from "../contexts/TravelContext"
 import { useState } from "react";
 
 const AllTravels = () => {
-<<<<<<< HEAD
     const { travels, filteredTravels, setFilteredTravels } = useTravels()
-=======
-    const { travels } = useTravels()
-    const [filteredTravels, setFilteredTravels] = useState(travels);
->>>>>>> 3452601f60f90e75c623e67216f3cf866733c957
     const [searchCity, setSearchCity] = useState("");
 
     const handleSearch = (city) => {
@@ -20,8 +15,8 @@ const AllTravels = () => {
             const filtered = travels.filter(travel =>
                 travel.destination.city.toLowerCase().includes(city.toLowerCase()) ||
                 travel.destination.country.toLowerCase().includes(city.toLowerCase()) ||
-                 travel.description.toLowerCase().includes(city.toLowerCase()) ||
-                  travel.travelType.toLowerCase().includes(city.toLowerCase()) 
+                travel.description.toLowerCase().includes(city.toLowerCase()) ||
+                travel.travelType.toLowerCase().includes(city.toLowerCase())
             );
             setFilteredTravels(filtered);
         }
