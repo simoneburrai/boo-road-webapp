@@ -32,7 +32,6 @@ const SingleTravel = () => {
                     </div>
                     {currentOperators.map(operator => {
                         return <>
-                            <h2 className="mt-3">Operatori</h2>
                             <OperatorCard operator={operator} key={operator.id} />
                         </>
                     })}

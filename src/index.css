@@ -111,6 +111,14 @@
             font-size: 2vw;
         }
 
+        .travelcard h3 {
+            font-size: 4vw;
+        }
+
+        .travelcard .btn {
+            font-size: 3vw;
+        }
+
         .darkmode {
             width: 35px;
             height: 35px;

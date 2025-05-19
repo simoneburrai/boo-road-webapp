@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <>
-            <h2 className="mb-5 fs-1 text-center">futuri viaggi in partenza</h2>
+            <h2 className="mb-3 mb-md-5 fs-1 text-center">futuri viaggi in partenza</h2>
             <TravelCard travels={filteredTravelsforDate} />
         </>
     )
