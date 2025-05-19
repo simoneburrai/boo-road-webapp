@@ -166,8 +166,9 @@ function TravelForm() {
                 ></textarea>
             </label>
 
-            <button type="submit" className='btn btn-primary me-3'>Submit</button>
-            <Link to="/travels">Travel List</Link>
+            <button type="submit" className='btn btn-primary me-3'>Invio</button>
+            <Link to="/travels" className='btn btn-primary me-3'>Lista viaggi</Link>
+            <Link to="/" className='btn btn-primary me-3'>Home</Link>
         </form>
     );
 }
