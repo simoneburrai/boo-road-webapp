@@ -4,6 +4,7 @@ import TravelDetailCard from "../components/travels/TravelDetailCard";
 import { useTravels } from "../contexts/TravelContext"
 import EmergencyCard from "../components/travels/EmergencyCard";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const SingleTravel = () => {
     const navigate = useNavigate();
@@ -25,7 +26,10 @@ const SingleTravel = () => {
             {currentTravel && <>
                 <TravelDetailCard travel={currentTravel} />
                 <div>
-                    <h2 className="mt-3">Operatori</h2>
+                    <div className="d-flex justify-content-between align-items-center">
+                        <h2 className="mt-3">Operatori</h2>
+                        <Link to={`/travels/${travelId}/travellers/newTraveller`} className="btn btn-primary" >aggiungi viaggiatore</Link>
+                    </div>
                     {currentOperators.map(operator => {
                         return <OperatorCard operator={operator} key={operator.id} />
                     })}

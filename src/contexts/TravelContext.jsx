@@ -9,8 +9,8 @@ const TravelContext = createContext();
 const TravelProvider = ({ children }) => {
 
     const [filteredTravels, setFilteredTravels] = useState(travels);
-
-    return <TravelContext.Provider value={{ travels, operators, travellers, emergencyContacts, filteredTravels, setFilteredTravels }}>
+    const [filteredTravellers, setFilteredTravellers] = useState(travellers);
+    return <TravelContext.Provider value={{ travels, operators, travellers, emergencyContacts, filteredTravels, setFilteredTravels, filteredTravellers, setFilteredTravellers }}>
         {children}
     </TravelContext.Provider>
 }
@@ -19,7 +19,12 @@ const useTravels = () => {
     return useContext(TravelContext);
 };
 
+const useTravellers = () => {
+    return useContext(TravelContext);
+};
+
 export {
     useTravels,
+    useTravellers,
     TravelProvider
 }
