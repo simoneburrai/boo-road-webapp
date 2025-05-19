@@ -8,6 +8,7 @@ import SingleTraveller from "./pages/SingleTraveller"
 import Contacts from "./pages/Contacts"
 import {TravelProvider} from "./contexts/TravelContext"
 import NotFound from "./pages/NotFound"
+import NewTraveller from "./pages/NewTraveller"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/travels" element={<AllTravels/>}/>
         <Route path="/travels/:travelId" element={<SingleTravel/>}></Route>
+         <Route path="/travels/:travelId/newtraveller" element={<NewTraveller/>}></Route>
         <Route path="/travels/:travelId/travellers" element={<AllTravellers/>}></Route>
         <Route path="/travels/:travelId/travellers/:id" element={<SingleTraveller/>}></Route>
         <Route path="/contacts" element={<Contacts/>}/>
