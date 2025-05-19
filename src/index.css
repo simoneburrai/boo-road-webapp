@@ -10,6 +10,10 @@
         color: inherit;
     }
 
+    header {
+        background-color: #9ECBFF;
+    }
+
     .durata {
         border: 3px solid rgba(255, 0, 0, 0.412);
         border-radius: 30px;
@@ -27,6 +31,7 @@
     }
 
     label {
+        background-color: #d1e6ff;
         display: block;
         width: 50px;
         height: 50px;
@@ -79,6 +84,6 @@
     }
 
 
-.line-through {
-    text-decoration: line-through;
-}
+    .line-through {
+        text-decoration: line-through;
+    }

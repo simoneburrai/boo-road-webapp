@@ -1,10 +1,10 @@
 const Footer = () => {
-    return <footer className="bg-dark text-light">
+    return <footer className="bg-dark text-light p-5">
         <div className="container">
             <div className="row">
                 <div className="col-md-3">
                     <h5>Founder</h5>
-                    <ul className="list-unstyled">
+                    <ul className="list-unstyled fst-italic">
                         <li>David Bassani</li>
                         <li>Simone Burrai</li>
                         <li>Carlo Costa</li>
@@ -19,9 +19,9 @@ const Footer = () => {
                     <p>20100 Milano (MI)</p>
                     <p>Italia</p>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 text-end">
                     <h5>Seguici sui social</h5>
-                    <div className="d-flex">
+                    <div className="d-flex justify-content-end">
                         <a href="#" target="_blank" className="text-light me-2"><i className="fa-brands fa-facebook"></i></a>
                         <a href="#" target="_blank" className="text-light me-2"><i className="fa-brands fa-twitter"></i></a>
                         <a href="#" target="_blank" className="text-light me-2"><i className="fa-brands fa-instagram"></i></a>

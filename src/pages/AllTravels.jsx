@@ -1,10 +1,10 @@
 import TravelCard from "../components/travels/TravelCard";
 import SearchBarTravel from "../components/SearchBarTravel";
-import {useTravels} from "../contexts/TravelContext"
+import { useTravels } from "../contexts/TravelContext"
 import { useState } from "react";
 
 const AllTravels = () => {
-    const {travels} = useTravels()
+    const { travels } = useTravels()
     const [filteredTravels, setFilteredTravels] = useState(travels);
     const [searchCity, setSearchCity] = useState("");
 
@@ -19,10 +19,10 @@ const AllTravels = () => {
             setFilteredTravels(filtered);
         }
     };
-    
+
     return (
         <div>
-            <div className="d-flex flex-row my-5 justify-content-between mx-3">
+            <div className="d-flex flex-row mb-5 justify-content-between mx-3">
                 <h2 className=" text-center text-light">naviga tra tutti i nostri viaggi!</h2>
                 <SearchBarTravel onSearch={handleSearch} />
 
