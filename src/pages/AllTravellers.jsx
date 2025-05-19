@@ -40,7 +40,7 @@ const AllTravellers = () => {
     if (currentTravellers && currentTravellers.length > 0) {
         return <div >
             <SearchBarTraveller onSearch={handleSearch} />
-            <div className="d-flex flex-wrap">
+            <div className="d-flex flex-wrap justify-content-between">
                 {filteredTravellers.map(traveller => {
                     return <TravellerCard className="" traveller={traveller} key={traveller.id} />
                 })}

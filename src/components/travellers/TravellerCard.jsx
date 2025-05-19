@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const TravellerCard = ({ traveller }) => {
     const { name, surname, number, id, travelId } = traveller;
     return (
-        <div className="card m-4 p-3">
-            <div>Nome: {name}</div>
-            <div>Cognome: {surname}</div>
-            <div>Numero di telefono: {number}</div>
-            <Link className="btn btn-primary mb-4"
+        <div className="card travellercard p-3 mb-4">
+            <div className="mb-2">Nome: <strong>{name}</strong></div>
+            <div className="mb-2">Cognome: <strong>{surname}</strong></div>
+            <div className="mb-4">Numero di telefono: <strong>{number}</strong></div>
+            <Link className="btn btn-primary mb-1"
                 to={`/travels/${travelId}/travellers/${id}`}>Dettagli Viaggiatore</Link>
         </div>
     )
