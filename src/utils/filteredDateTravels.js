@@ -13,6 +13,7 @@ const filteredSortedTravels = (travels, monthsFilter) => {
       differenceInMonths(travel.startDate, today) <= monthsFilter
     )
     .sort((a, b) => compareAsc(a.startDate, b.startDate))
+    .slice(0, 6)
     .map(({ startDate, ...rest }) => rest);
 };
 
