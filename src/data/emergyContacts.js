@@ -256,18 +256,6 @@ const emergencyContacts = [
     "phone": "+90 352 337 52 00",
     "email": "support.cappadocia@example.com",
     "location": "Centro Informazioni Turistiche, Göreme",
-    "internationalSupport": {
-      "embassy": {
-        "name": "Ambasciata d'Italia ad Ankara",
-        "phone": "+90 312 457 4200",
-        "email": "ambasciata.ankara@esteri.it",
-        "address": "Atatürk Bulvari No. 118, Kavaklidere, Ankara, Turchia"
-      },
-      "emergencyNumbers": {
-        "police": "155",
-        "ambulance": "112"
-      }
-    }
   },
   {
     "travelId": 21,

@@ -1,11 +1,10 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import {useTravels} from "../contexts/TravelContext"
 import TravellerCard from "../components/travellers/TravellerCard"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SearchBarTraveller from "../components/SearchBarTraveller";
 
 const AllTravellers = ()=> {
-    const navigate = useNavigate();
     let {travelId} = useParams();
     travelId = parseInt(travelId);
     const {travellers} = useTravels()
