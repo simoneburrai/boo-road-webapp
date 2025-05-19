@@ -25,9 +25,12 @@ const SingleTravel = () => {
             {currentTravel && <>
                 <TravelDetailCard travel={currentTravel} />
                 <div>
-                    <h2 className="mt-3">Operatori</h2>
+                    
                     {currentOperators.map(operator => {
-                        return <OperatorCard operator={operator} key={operator.id} />
+                        return <>
+                        <h2 className="mt-3">Operatori</h2>
+                        <OperatorCard operator={operator} key={operator.id} />
+                        </>
                     })}
                 </div>
                 <EmergencyCard travelId={travelId} />
