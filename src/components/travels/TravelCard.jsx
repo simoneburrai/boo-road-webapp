@@ -23,7 +23,7 @@ const TravelCard = ({ travels }) => {
                                 <div className="d-flex flex-row justify-content-between">
                                     <h4 className={`mb-4 p-2 px-3 price ${travel.discountPrice && "line-through"}`}>{travel.price}€</h4>
                                     {travel.discountPrice && <h4 className="mb-4 p-2 px-3 discount">{travel.discountPrice}€</h4>}
-                                    <Link to={`/travels/${travel.id}`} className="btn btn-primary mb-4 p-2">dettagli</Link>
+                                    <Link to={`/travels/${travel.id}`} className="btn btn-primary mb-4 p-2">Dettagli</Link>
                                 </div>
                             </div>
                         </div>
