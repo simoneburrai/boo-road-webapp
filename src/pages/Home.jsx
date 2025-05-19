@@ -4,9 +4,9 @@ import { useTravels } from "../contexts/TravelContext"
 
 
 const Home = () => {
-    const { travels } = useTravels()
+    const { filteredTravels } = useTravels()
     const nextMonths = 2;
-    const filteredTravelsforDate = filteredSortedTravels(travels, nextMonths)
+    const filteredTravelsforDate = filteredSortedTravels(filteredTravels, nextMonths)
 
 
     return (
