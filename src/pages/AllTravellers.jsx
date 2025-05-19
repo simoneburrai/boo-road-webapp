@@ -1,12 +1,22 @@
+<<<<<<< HEAD
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTravels } from "../contexts/TravelContext"
+=======
+import { useParams, Link } from "react-router-dom";
+import {useTravels} from "../contexts/TravelContext"
+>>>>>>> a9c8349577f715378050cb1cc8d5f804d0687c17
 import TravellerCard from "../components/travellers/TravellerCard"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SearchBarTraveller from "../components/SearchBarTraveller";
 
+<<<<<<< HEAD
 const AllTravellers = () => {
     const navigate = useNavigate();
     let { travelId } = useParams();
+=======
+const AllTravellers = ()=> {
+    let {travelId} = useParams();
+>>>>>>> a9c8349577f715378050cb1cc8d5f804d0687c17
     travelId = parseInt(travelId);
     const { travellers } = useTravels()
     const currentTravellers = travellers.filter(traveller => traveller.travelId === travelId)

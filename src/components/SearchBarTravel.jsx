@@ -12,10 +12,10 @@ const SearchBarTravel = ({ onSearch }) => {
         <form onSubmit={handleSubmit}>
             <input
             type="text"
-            placeholder="Cerca viaggio"
+            placeholder="Inserisci Info Viaggio"
             value={searchValue}
             onChange={(e)=> setSearchValue(e.target.value)}
-            className="form-control w-50 mb-4"
+            className="form-control w-30 mb-4"
         />
         <button type="submit" class="btn btn-light">Cerca</button>
         </form>
