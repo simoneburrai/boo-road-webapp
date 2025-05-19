@@ -15,9 +15,11 @@ const TravelCard = ({ travels }) => {
                             <img className="rounded imagecard" src={travel.image} alt="image" />
                             <div className="w-50">
                                 <h3 className="p-1 p-md-2 m-md-3 m-2 m-md-4 text-center fst-italic"><i className="fa-solid fa-plane"></i> Destinazione: {travel.destination.city}</h3>
-                                <div className="d-flex flex-row justify-content-between  mb-4 durata px-3">
+                                <div className="d-flex flex-row justify-content-between align-items-center  mb-4 durata px-3">
                                     <h4 className="p-2 text-center">Inizio: {formattedStart}</h4>
+                                    <i class="fa-solid fa-arrow-right fs-3"></i>
                                     <h5 className="p-2 text-center">{travel.duration} Giorni</h5>
+                                    <i class="fa-solid fa-arrow-right fs-3"></i>
                                     <h4 className="p-2 text-center">Fine: {formattedEnd}</h4>
                                 </div>
                                 <div className="d-flex flex-row flex-wrap justify-content-between">
