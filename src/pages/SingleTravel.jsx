@@ -42,7 +42,7 @@ const SingleTravel = () => {
                         ))}
                     </div>
                 )}
-                {internationalSupport && <EmergencyCard travelId={travelId} />}
+                {currentTravel.internationalSupport && <EmergencyCard travelId={travelId} />}
                 
             </>}
         </div>
