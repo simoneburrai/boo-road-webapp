@@ -1,57 +1,67 @@
-
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useTravels } from "../contexts/TravelContext"
-
-import TravellerCard from "../components/travellers/TravellerCard"
-import { useState } from "react";
+import { useTravels } from "../contexts/TravelContext";
+import TravellerCard from "../components/travellers/TravellerCard";
+import { useState, useEffect } from "react";
 import SearchBarTraveller from "../components/SearchBarTraveller";
-
 
 const AllTravellers = () => {
     const navigate = useNavigate();
-    let { travelId } = useParams();
+    const { travelId } = useParams();
+    const parsedTravelId = parseInt(travelId);
 
-
-    travelId = parseInt(travelId);
-    const { travellers } = useTravels()
-    const currentTravellers = travellers.filter(traveller => traveller.travelId === travelId)
-    const [filteredTravellers, setFilteredTravellers] = useState(currentTravellers);
+    const { filteredTravellers } = useTravels();
+    const [selectedTravellers, setSelectedTravellers] = useState([]);
     const [searchName, setSearchName] = useState("");
+
+    useEffect(() => {
+        const filtered = filteredTravellers.filter(
+            (traveller) => traveller.travelId === parsedTravelId
+        );
+        setSelectedTravellers(filtered);
+    }, [filteredTravellers, parsedTravelId]);
 
     const handleSearch = (name) => {
         setSearchName(name);
         if (name === "") {
-            setFilteredTravellers(currentTravellers);
+            const filtered = filteredTravellers.filter(
+                (traveller) => traveller.travelId === parsedTravelId
+            );
+            setSelectedTravellers(filtered);
         } else {
-            const filtered = currentTravellers.filter(traveller =>
-                traveller.name.toLowerCase().includes(name.toLowerCase()) ||
-                traveller.surname.toLowerCase().includes(name.toLowerCase()) ||
-                traveller.nationality.toLowerCase().includes(name.toLowerCase()));
-            setFilteredTravellers(filtered);
+            const filtered = filteredTravellers.filter(
+                (traveller) =>
+                    traveller.travelId === parsedTravelId &&
+                    (traveller.name.toLowerCase().includes(name.toLowerCase()) ||
+                        traveller.surname.toLowerCase().includes(name.toLowerCase()) ||
+                        traveller.nationality.toLowerCase().includes(name.toLowerCase()))
+            );
+            setSelectedTravellers(filtered);
         }
     };
 
-    // useEffect(()=> {
-    //     if(currentTravellers.length === 0){
-    //         navigate("/notfound");
-    //     }
-    // }, [currentTravellers, navigate])
-
-    if (currentTravellers && currentTravellers.length > 0) {
-        return <div >
-            <SearchBarTraveller onSearch={handleSearch} />
-            <div className="d-flex flex-wrap justify-content-between">
-                {filteredTravellers.map(traveller => {
-                    return <TravellerCard className="" traveller={traveller} key={traveller.id} />
-                })}
+    if (selectedTravellers && selectedTravellers.length > 0) {
+        return (
+            <div>
+                <SearchBarTraveller onSearch={handleSearch} />
+                <div className="d-flex flex-wrap justify-content-between">
+                    {selectedTravellers.map((traveller) => (
+                        <TravellerCard traveller={traveller} key={traveller.id} />
+                    ))}
+                </div>
             </div>
-        </div>
+        );
     } else {
-        return <div className="text-center text-white fs-1">
-            Impossibile visualizzare i clienti dei viaggi passati...
-            <div><Link to="/" className="btn btn-primary mb-4">Torna alla Home</Link></div>
-        </div>
+        return (
+            <div className="text-center text-white fs-1">
+                Impossibile visualizzare i clienti dei viaggi passati...
+                <div>
+                    <Link to="/" className="btn btn-primary mb-4">
+                        Torna alla Home
+                    </Link>
+                </div>
+            </div>
+        );
     }
-}
+};
 
 export default AllTravellers;
