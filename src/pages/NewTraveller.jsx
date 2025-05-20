@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTravellers } from '../contexts/TravelContext';
 import travellers from '../data/travellers';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 function NewTraveller() {
@@ -133,6 +133,7 @@ function NewTraveller() {
                 />
             </label>
             <button type="submit" className="btn btn-primary"><i className="fa-solid fa-user-plus"></i> </button>
+            <Link to={`/travels/${travelId}/travellers`} className="btn btn-primary ms-2" > Torna Lista viaggiatore </Link >
         </form>
     );
 }
