@@ -1,5 +1,5 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import OperatorCard from "../components/travels/OperatorCard";
 import TravelDetailCard from "../components/travels/TravelDetailCard";
 import EmergencyCard from "../components/travels/EmergencyCard";
@@ -10,7 +10,7 @@ const SingleTravel = () => {
     let { travelId } = useParams();
     travelId = parseInt(travelId);
     const { operators, filteredTravels } = useTravels();
-
+    const [currentTraveller, setCurrentTraveller] = useState([]);
     const currentTravel = filteredTravels.find(travel => travel.id === travelId);
     const currentOperators = operators.filter(operator => operator.travelId === travelId);
 
@@ -18,6 +18,8 @@ const SingleTravel = () => {
     const isTravelEnded = currentTravel.end && new Date(currentTravel.end) < new Date();
 
     useEffect(() => {
+        setCurrentTraveller(()=> filteredTravels.find(travel => travel.id === travelId))
+        console.log(currentTraveller);
         if (!currentTravel) {
             navigate("/notfound");
         }
@@ -42,7 +44,7 @@ const SingleTravel = () => {
                         ))}
                     </div>
                 )}
-                {currentTravel.internationalSupport && <EmergencyCard travelId={travelId} />}
+                {<EmergencyCard travelId={travelId} />}
 
             </>}
         </div>

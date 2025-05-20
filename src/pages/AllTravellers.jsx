@@ -11,6 +11,7 @@ const AllTravellers = () => {
 
     const { filteredTravellers } = useTravels();
     const [selectedTravellers, setSelectedTravellers] = useState([]);
+    
     const [searchName, setSearchName] = useState("");
 
     useEffect(() => {
