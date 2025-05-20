@@ -9,9 +9,9 @@ const SingleTravel = () => {
     const navigate = useNavigate();
     let { travelId } = useParams();
     travelId = parseInt(travelId);
-    const { travels, operators } = useTravels();
+    const {  operators, filteredTravels } = useTravels();
 
-    const currentTravel = travels.find(travel => travel.id === travelId);
+    const currentTravel = filteredTravels.find(travel => travel.id === travelId);
     const currentOperators = operators.filter(operator => operator.travelId === travelId);
 
     // Calcola se il viaggio è terminato
@@ -42,8 +42,8 @@ const SingleTravel = () => {
                         ))}
                     </div>
                 )}
-
-                <EmergencyCard travelId={travelId} />
+                {internationalSupport && <EmergencyCard travelId={travelId} />}
+                
             </>}
         </div>
     );

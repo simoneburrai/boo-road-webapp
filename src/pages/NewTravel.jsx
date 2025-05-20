@@ -16,8 +16,9 @@ function TravelForm() {
         price: 0,
         discountPrice: undefined,
         state: 'active',
-        image: '',
+        image: null,
         description: '',
+        internationalSupport: null
     };
 
     const { filteredTravels, setFilteredTravels } = useTravels()
