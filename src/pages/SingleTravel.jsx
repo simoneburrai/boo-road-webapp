@@ -9,7 +9,7 @@ const SingleTravel = () => {
     const navigate = useNavigate();
     let { travelId } = useParams();
     travelId = parseInt(travelId);
-    const {  operators, filteredTravels } = useTravels();
+    const { operators, filteredTravels } = useTravels();
 
     const currentTravel = filteredTravels.find(travel => travel.id === travelId);
     const currentOperators = operators.filter(operator => operator.travelId === travelId);
@@ -33,7 +33,7 @@ const SingleTravel = () => {
                         <div className="d-flex justify-content-between align-items-center">
                             <h2 className="mt-3">Operatori</h2>
                             <Link to={`/travels/${travelId}/travellers/newTraveller`} className="btn btn-primary">
-                                aggiungi viaggiatore
+                                Aggiungi viaggiatore
                             </Link>
                         </div>
 
@@ -43,7 +43,7 @@ const SingleTravel = () => {
                     </div>
                 )}
                 {currentTravel.internationalSupport && <EmergencyCard travelId={travelId} />}
-                
+
             </>}
         </div>
     );
