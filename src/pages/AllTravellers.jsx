@@ -53,8 +53,8 @@ const AllTravellers = () => {
         );
     } else {
         return (
-            <div className="text-center text-white fs-1">
-                Impossibile visualizzare i clienti dei viaggi passati...
+            <div className="text-center fw-bold fs-3">
+                <p>Impossibile visualizzare i clienti dei viaggi passati...</p>
                 <div>
                     <Link to="/" className="btn btn-primary mb-4">
                         Torna alla Home
