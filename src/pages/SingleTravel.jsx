@@ -18,7 +18,7 @@ const SingleTravel = () => {
     const isTravelEnded = currentTravel.end && new Date(currentTravel.end) < new Date();
 
     useEffect(() => {
-        setCurrentTraveller(()=> filteredTravels.find(travel => travel.id === travelId))
+        setCurrentTraveller(() => filteredTravels.find(travel => travel.id === travelId))
         console.log(currentTraveller);
         if (!currentTravel) {
             navigate("/notfound");
@@ -35,7 +35,7 @@ const SingleTravel = () => {
                         <div className="d-flex justify-content-between align-items-center">
                             <h2 className="mt-3">Operatori</h2>
                             <Link to={`/travels/${travelId}/travellers/newTraveller`} className="btn btn-primary">
-                                Aggiungi viaggiatore
+                                Aggiungi Viaggiatore
                             </Link>
                         </div>
 
