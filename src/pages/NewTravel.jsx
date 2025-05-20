@@ -4,6 +4,9 @@ import { useTravels } from '../contexts/TravelContext';
 import travels from '../data/travels';
 
 function TravelForm() {
+
+    const {filteredTravels, setFilteredTravels} = useTravels();
+
     const initialFormData = {
         destination: {
             city: '',
@@ -16,18 +19,17 @@ function TravelForm() {
         price: 0,
         discountPrice: undefined,
         state: 'active',
-        image: null,
+        image: '',
         description: '',
         internationalSupport: null
     };
 
-    const { filteredTravels, setFilteredTravels } = useTravels()
 
     const [formData, setFormData] = useState(initialFormData);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-
+    
         // Se il nome del campo contiene un punto (campo annidato)
         if (name.includes('.')) {
             const [parent, child] = name.split('.');

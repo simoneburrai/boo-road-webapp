@@ -9,12 +9,12 @@ const SingleTraveller = () => {
     }
 
     const navigate = useNavigate();
-    const { travellers } = useTravels();
+    const { filteredTravellers } = useTravels();
     let { id, travelId } = useParams();
     id = parseInt(id);
     travelId = parseInt(travelId)
     console.log(travelId, id);
-    const currentTravellers = travellers.filter(traveller => traveller.travelId === travelId)
+    const currentTravellers = filteredTravellers.filter(traveller => traveller.travelId === travelId)
     const currentTraveller = currentTravellers.find(traveller => traveller.id === id);
 
     useEffect(() => {
