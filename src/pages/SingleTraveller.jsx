@@ -18,10 +18,10 @@ const SingleTraveller = () => {
     const currentTraveller = currentTravellers.find(traveller => traveller.id === id);
 
     useEffect(() => {
-        if (travellers.length > 0 && (!currentTraveller || currentTravellers.length === 0)) {
+        if (currentTraveller.length > 0 && (!currentTraveller || currentTravellers.length === 0)) {
             navigate("/notfound");
         }
-    }, [travellers, currentTraveller, currentTravellers, navigate]);
+    }, [filteredTravellers, currentTraveller, currentTravellers, navigate]);
 
 
     if (currentTraveller && currentTravellers.length > 0) {
